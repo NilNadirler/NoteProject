@@ -1,0 +1,12 @@
+C:\Users\ALTANEMRE\source\repos\NoteProject\NoteProject.Entities\obj\Debug\NoteProject.Entities.csproj.CoreCompileInputs.cache
+C:\Users\ALTANEMRE\source\repos\NoteProject\NoteProject.Entities\bin\Debug\NoteProject.Entities.dll
+C:\Users\ALTANEMRE\source\repos\NoteProject\NoteProject.Entities\bin\Debug\NoteProject.Entities.pdb
+C:\Users\ALTANEMRE\source\repos\NoteProject\NoteProject.Entities\obj\Debug\NoteProject.Entities.dll
+C:\Users\ALTANEMRE\source\repos\NoteProject\NoteProject.Entities\obj\Debug\NoteProject.Entities.pdb
+C:\Users\ALTANEMRE\source\repos\NoteProject\NoteProject.Entities\obj\Debug\NoteProject.Entities.csprojAssemblyReference.cache
+C:\Users\ALTANEMRE\source\repos\WEBYAZILIM-HS\NoteProject\NoteProject.Entities\bin\Debug\NoteProject.Entities.dll
+C:\Users\ALTANEMRE\source\repos\WEBYAZILIM-HS\NoteProject\NoteProject.Entities\bin\Debug\NoteProject.Entities.pdb
+C:\Users\ALTANEMRE\source\repos\WEBYAZILIM-HS\NoteProject\NoteProject.Entities\obj\Debug\NoteProject.Entities.csprojAssemblyReference.cache
+C:\Users\ALTANEMRE\source\repos\WEBYAZILIM-HS\NoteProject\NoteProject.Entities\obj\Debug\NoteProject.Entities.csproj.CoreCompileInputs.cache
+C:\Users\ALTANEMRE\source\repos\WEBYAZILIM-HS\NoteProject\NoteProject.Entities\obj\Debug\NoteProject.Entities.dll
+C:\Users\ALTANEMRE\source\repos\WEBYAZILIM-HS\NoteProject\NoteProject.Entities\obj\Debug\NoteProject.Entities.pdb

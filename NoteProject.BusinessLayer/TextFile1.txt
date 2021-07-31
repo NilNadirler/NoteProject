@@ -1,0 +1,6 @@
+﻿Referance
+WEB->BLL->DAL
+
+WEB Ref:BLL,ENTITY
+BLL Ref:DAL,ENTITY
+DAL Ref:ENTITY
