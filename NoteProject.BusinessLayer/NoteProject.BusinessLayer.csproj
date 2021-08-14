@@ -51,13 +51,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BusinessLayerResult.cs" />
+    <Compile Include="Results\BusinessLayerResult.cs" />
     <Compile Include="CategoryManager.cs" />
     <Compile Include="EvernoteUserManager.cs" />
+    <Compile Include="Abstract\ManagerBase.cs" />
     <Compile Include="NoteManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\NoteProject.Common\NoteProject.Common.csproj">
+      <Project>{bc51a281-f0b3-483b-99ee-eba28c30dba3}</Project>
+      <Name>NoteProject.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NoteProject.Core\NoteProject.Core.csproj">
+      <Project>{aa437239-99d7-472f-9c11-f6fc7f0575b8}</Project>
+      <Name>NoteProject.Core</Name>
+    </ProjectReference>
     <ProjectReference Include="..\NoteProject.DataAccesslayer\NoteProject.DataAccesslayer.csproj">
       <Project>{c0e705f2-3de1-4f36-bc04-8aa0dfac2ef9}</Project>
       <Name>NoteProject.DataAccesslayer</Name>
@@ -66,9 +75,6 @@
       <Project>{ca0cd311-a364-4da3-a823-fac4c379d11a}</Project>
       <Name>NoteProject.Entities</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="TextFile1.txt" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

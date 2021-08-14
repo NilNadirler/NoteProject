@@ -28,6 +28,7 @@ namespace NoteProject.DataAccesslayer.EF
                 IsAdmin=true,
                 Username="altanemre",
                 Password="1",
+                ProfileImageFilename="user_boy.png",
                 CreateOn=DateTime.Now,
                 ModifiedOn=DateTime.Now.AddMinutes(5),
                 ModifiedUsername="altanemre"
@@ -44,6 +45,7 @@ namespace NoteProject.DataAccesslayer.EF
                 IsAdmin = false,
                 Username = "altanuras",
                 Password = "1",
+                ProfileImageFilename = "user_boy.png",
                 CreateOn = DateTime.Now,
                 ModifiedOn = DateTime.Now.AddMinutes(5),
                 ModifiedUsername = "altanemre"
@@ -66,6 +68,7 @@ namespace NoteProject.DataAccesslayer.EF
                     IsAdmin = false,
                     Username = $"user{i}",
                     Password = "123",
+                    ProfileImageFilename = "user_boy.png",
                     CreateOn = FakeData.DateTimeData.GetDatetime(DateTime.Now.AddYears(-1),DateTime.Now),
                     ModifiedOn = FakeData.DateTimeData.GetDatetime(DateTime.Now.AddYears(-1), DateTime.Now),
                     ModifiedUsername = $"user{i}"

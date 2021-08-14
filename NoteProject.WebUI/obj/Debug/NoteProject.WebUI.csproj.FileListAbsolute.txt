@@ -170,3 +170,7 @@ C:\Users\ALTANEMRE\source\repos\WEBYAZILIM-HS\NoteProject\NoteProject.WebUI\obj\
 C:\Users\ALTANEMRE\source\repos\WEBYAZILIM-HS\NoteProject\NoteProject.WebUI\obj\Debug\NoteProject.WebUI.csproj.CopyComplete
 C:\Users\ALTANEMRE\source\repos\WEBYAZILIM-HS\NoteProject\NoteProject.WebUI\obj\Debug\NoteProject.WebUI.dll
 C:\Users\ALTANEMRE\source\repos\WEBYAZILIM-HS\NoteProject\NoteProject.WebUI\obj\Debug\NoteProject.WebUI.pdb
+C:\Users\ALTANEMRE\source\repos\WEBYAZILIM-HS\NoteProject\NoteProject.WebUI\bin\NoteProject.Common.dll
+C:\Users\ALTANEMRE\source\repos\WEBYAZILIM-HS\NoteProject\NoteProject.WebUI\bin\NoteProject.Common.pdb
+C:\Users\ALTANEMRE\source\repos\WEBYAZILIM-HS\NoteProject\NoteProject.WebUI\bin\NoteProject.Core.dll
+C:\Users\ALTANEMRE\source\repos\WEBYAZILIM-HS\NoteProject\NoteProject.WebUI\bin\NoteProject.Core.pdb

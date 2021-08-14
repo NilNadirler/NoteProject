@@ -36,3 +36,7 @@ C:\Users\ALTANEMRE\source\repos\WEBYAZILIM-HS\NoteProject\NoteProject.BusinessLa
 C:\Users\ALTANEMRE\source\repos\WEBYAZILIM-HS\NoteProject\NoteProject.BusinessLayer\obj\Debug\NoteProject.BusinessLayer.csproj.CopyComplete
 C:\Users\ALTANEMRE\source\repos\WEBYAZILIM-HS\NoteProject\NoteProject.BusinessLayer\obj\Debug\NoteProject.BusinessLayer.dll
 C:\Users\ALTANEMRE\source\repos\WEBYAZILIM-HS\NoteProject\NoteProject.BusinessLayer\obj\Debug\NoteProject.BusinessLayer.pdb
+C:\Users\ALTANEMRE\source\repos\WEBYAZILIM-HS\NoteProject\NoteProject.BusinessLayer\bin\Debug\NoteProject.Common.dll
+C:\Users\ALTANEMRE\source\repos\WEBYAZILIM-HS\NoteProject\NoteProject.BusinessLayer\bin\Debug\NoteProject.Common.pdb
+C:\Users\ALTANEMRE\source\repos\WEBYAZILIM-HS\NoteProject\NoteProject.BusinessLayer\bin\Debug\NoteProject.Core.dll
+C:\Users\ALTANEMRE\source\repos\WEBYAZILIM-HS\NoteProject\NoteProject.BusinessLayer\bin\Debug\NoteProject.Core.pdb

@@ -30,3 +30,7 @@ C:\Users\ALTANEMRE\source\repos\WEBYAZILIM-HS\NoteProject\NoteProject.DataAccess
 C:\Users\ALTANEMRE\source\repos\WEBYAZILIM-HS\NoteProject\NoteProject.DataAccesslayer\obj\Debug\NoteProject.DataAccesslayer.csproj.CopyComplete
 C:\Users\ALTANEMRE\source\repos\WEBYAZILIM-HS\NoteProject\NoteProject.DataAccesslayer\obj\Debug\NoteProject.DataAccesslayer.dll
 C:\Users\ALTANEMRE\source\repos\WEBYAZILIM-HS\NoteProject\NoteProject.DataAccesslayer\obj\Debug\NoteProject.DataAccesslayer.pdb
+C:\Users\ALTANEMRE\source\repos\WEBYAZILIM-HS\NoteProject\NoteProject.DataAccesslayer\bin\Debug\NoteProject.Common.dll
+C:\Users\ALTANEMRE\source\repos\WEBYAZILIM-HS\NoteProject\NoteProject.DataAccesslayer\bin\Debug\NoteProject.Common.pdb
+C:\Users\ALTANEMRE\source\repos\WEBYAZILIM-HS\NoteProject\NoteProject.DataAccesslayer\bin\Debug\NoteProject.Core.dll
+C:\Users\ALTANEMRE\source\repos\WEBYAZILIM-HS\NoteProject\NoteProject.DataAccesslayer\bin\Debug\NoteProject.Core.pdb

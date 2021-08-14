@@ -1,4 +1,5 @@
-﻿using NoteProject.DataAccesslayer.EF;
+﻿using NoteProject.BusinessLayer.Abstract;
+using NoteProject.DataAccesslayer.EF;
 using NoteProject.Entities;
 using System;
 using System.Collections.Generic;
@@ -8,18 +9,8 @@ using System.Threading.Tasks;
 
 namespace NoteProject.BusinessLayer
 {
-    public class NoteManager
+    public class NoteManager:ManagerBase<Note>
     {
-        private Repository<Note> repo_note = new Repository<Note>();
-
-        public List<Note> GetAllNote()
-        {
-            return repo_note.List();
-        }
-
-        public IQueryable<Note> GetAllNoteQueryable()
-        {
-            return repo_note.ListQueryable();
-        }
+       
     }
 }

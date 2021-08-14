@@ -1,5 +1,6 @@
 ﻿using Noteproject.DataAccessLayer.EF;
-using NoteProject.DataAccesslayer.Abstract;
+using NoteProject.Common;
+using NoteProject.Core.DataAccess;
 using NoteProject.Entities;
 using System;
 using System.Collections.Generic;
@@ -11,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace NoteProject.DataAccesslayer.EF
 {
-    public class Repository<T>:RepositoryBase,IRepository<T> where T:class //Repository parametre olarak sadece class gönderebilir.
+    public class Repository<T>:RepositoryBase,IDataAccess<T> where T:class //Repository parametre olarak sadece class gönderebilir.
     {
         private DbSet<T> _objectSet;
         public Repository()
@@ -43,7 +44,7 @@ namespace NoteProject.DataAccesslayer.EF
 
                 o.CreateOn = now;
                 o.ModifiedOn = now;
-                o.ModifiedUsername = "system"; //TODO: İşlemi yapan kullanıcının adı yazılmalı...
+                o.ModifiedUsername = App.Common.GetUsername();
             }
             return Save();
         }
@@ -54,7 +55,7 @@ namespace NoteProject.DataAccesslayer.EF
                 MyEntityBase o = obj as MyEntityBase;
 
                 o.ModifiedOn = DateTime.Now; 
-                o.ModifiedUsername = "system"; //TODO: İşlemi yapan kullanıcının adı yazılmalı...
+                o.ModifiedUsername = App.Common.GetUsername();
             }
 
             return Save();

@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿@using NoteProject.Entities
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -29,6 +30,13 @@
 </head>
 
 <body>
+    @{ EvernoteUser user = null;
+
+        if (Session["login"] != null)
+        {
+            user = Session["login"] as EvernoteUser;
+        } }
+
 
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -41,14 +49,42 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Note Project</a>
+                <a class="navbar-brand" href="/Home/Index">Note Project</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
+                    @if (user != null)
+                    {
+
+        <li class="dropdown">
+            <a href="/Note/MyNotes" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                <span class="fas fa-wrench"></span> Yönetim <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+                <li>
+                    <a href="/Note/AddNew"><span class="glyphicon glyphicon-plus"></span> Not Ekle</a>
+                </li>
+                <li role="separator" class="divider"></li>
+                <li>
+                    <a href="/Note/MyNotes"><span class="glyphicon glyphicon-th-list"></span> Notlarım</a>
+                </li>
+                <li>
+                    <a href="/Note/MyLikedNotes"><span class="glyphicon glyphicon-heart"></span> Beğendiklerim</a>
+                </li>
+                <li role="separator" class="divider"></li>
+                @if (user.IsAdmin)
+                {
                     <li>
-                        <a href="#"><i class="fas fa-wrench"></i> Yönetim</a>
+                        <a href="/Category/AddNew"><span class="glyphicon glyphicon-plus"></span> Kategori Ekle</a>
                     </li>
+                    <li>
+                        <a href="/Category/List"><span class="glyphicon glyphicon-th-list"></span> Kategoriler</a>
+                    </li>
+                }
+            </ul>
+        </li>
+        }
                     <li>
                         <a href="/Home/MostLiked"><i class="fas fa-star"></i> En Beğenilenler</a>
                     </li>
@@ -60,18 +96,40 @@
                     </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="/Home/login"><i class="fas fa-sign-in-alt"></i> Giriş</a>
-                    </li>
-                    <li>
-                        <a href="/Home/Register"><i class="fas fa-user-plus"></i> Üye Ol</a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fas fa-user"></i> altanemre</a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fas fa-sign-out-alt"></i> Çıkış</a>
-                    </li>
+                    @if (user == null)
+                    {
+        <li>
+            <a href="/Home/Login"><i class="fas fa-sign-in-alt"></i> Giriş</a>
+        </li>
+                        <li>
+                            <a href="/Home/Register"><i class="fas fa-user-plus"></i> Üye Ol</a>
+                        </li>
+ }
+                    else
+                    {
+                        <li class="dropdown">
+                            <a href="/Home/ShowProfile" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                <span class="glyphicon glyphicon-user"></span> @user.Username <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="/Home/ShowProfile"><span class="glyphicon glyphicon-user"></span> Profili Göster</a>
+                                </li>
+                                <li role="separator" class="divider"></li>
+                                <li>
+                                    <a href="/Home/EditProfile"><span class="glyphicon glyphicon-edit"></span> Profili Düzenle</a>
+                                </li>
+                                <li role="separator" class="divider"></li>
+                                <li>
+                                    <a href="/Home/DeleteProfile" onclick="return confirm('Hesabınızı silmek istediğinize emin misiniz?');"><span class="glyphicon glyphicon-trash"></span> Profili Sil</a>
+                                </li>                               
+
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="/Home/Logout"><i class="fas fa-sign-out-alt"></i> Çıkış</a>
+                        </li>
+                     }
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -83,32 +141,7 @@
     @RenderBody()
     <!-- /.container -->
 
-    <div class="container">
-        <hr>
-        <!-- Footer -->
-        <footer>
-            <div class="row">
-                <div class="col-lg-4 text-center">
-                    <p>Owner &copy; Altan Emre Demirci</p>
-                </div>
-                <div class="col-lg-4 text-center">
-                    <p>Tüm hakları saklıdır &copy; NoteProject @DateTime.Now.Year</p>
-                </div>
-                <div class="col-lg-4 text-center">
-                    <div class="input-group">
-                        <input type="text" class="form-control" placeholder="e-posta adresiniz" />
-                        <span class="input-group-btn">
-                            <button class="btn btn-primary" type="submit">
-                                <i class="fas fa-paper-plane btn-xs"></i> Gönder
-                            </button>
-                        </span>
-                    </div>
-                </div>
-            </div>
-        </footer>
-
-    </div>
-    <!-- /.container -->
+    @RenderSection("footer", required: false)
 
 
 
